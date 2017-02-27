@@ -15,11 +15,14 @@
 # in the templates via {{ site.myvariable }}.
 title: hdixon.io
 email: hdixon@cmu.edu
+author: Henry Dixon
 description: ""
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://hdixon.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: nothenrydixon
 github_username:  hdixon
+facebook_username: nothenrydixon
+
 
 # Build settings
 markdown: kramdown
