@@ -4,18 +4,20 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
   {{ content }}
 
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
+        <span class="post-meta"><span class="post-attribute">Project</span><br> {{ post.project }}</span>
+        <span class="post-meta"><span class="post-attribute">Problem<br> {{ post.problem }}</span>
+        <span class="post-meta"><span class="post-attribute">Produced<br> {{ post.produced }}</span>
+        <span class="post-meta"><span class="post-attribute">Solution<br> {{ post.solution }}</span>
+        <span class="post-meta"><span class="post-attribute">Impact<br> {{ post.impact }}</span>
+
       </li>
     {% endfor %}
   </ul>
